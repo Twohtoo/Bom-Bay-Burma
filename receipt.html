@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bom Bay Burma - Receipt</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f6f8fc, #dbe9ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 22px;
+      color: #002855;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      margin: 10px 0;
+      color: #333;
+    }
+    .upload-screenshot {
+      margin: 20px 0;
+    }
+    input[type="file"] {
+      padding: 10px;
+    }
+    .place-order {
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #002855;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Thank You for Your Payment</h1>
+    <p>Payment Method: <strong>[Selected Method]</strong></p>
+    <p>Total Amount Paid: <strong>$XX.XX</strong></p>
+    <div class="upload-screenshot">
+      <label for="screenshot">Upload Payment Screenshot (Optional)</label><br>
+      <input type="file" id="screenshot" accept="image/*">
+    </div>
+    <a href="thankyou.html"><button class="place-order">Place Order</button></a>
+  </div>
+</body>
+</html>

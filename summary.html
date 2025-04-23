@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bom Bay Burma - Order Summary</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f6f8fc, #dbe9ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 420px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 22px;
+      color: #002855;
+      margin-bottom: 15px;
+    }
+    .summary-box {
+      text-align: left;
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .summary-box strong {
+      color: #002855;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+    .nav-buttons a {
+      text-decoration: none;
+    }
+    .back, .continue {
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+    }
+    .back {
+      background-color: #ccc;
+    }
+    .continue {
+      background-color: #002855;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Order Summary</h1>
+    <div class="summary-box">
+      <p><strong>Item Type:</strong> [Item Category]</p>
+      <p><strong>Weight:</strong> [Selected Weight]</p>
+      <p><strong>Temperature:</strong> [Temperature Type]</p>
+      <p><strong>Packaging:</strong> [Packaging Option]</p>
+      <p><strong>Pickup Address:</strong> [Sender Address]</p>
+      <p><strong>Delivery Address:</strong> [Receiver Address]</p>
+      <p><strong>Total Amount:</strong> $[Total]</p>
+    </div>
+    <div class="nav-buttons">
+      <a href="payment.html"><button class="back" type="button">Back</button></a>
+      <a href="receipt.html"><button class="continue" type="button">Place Order</button></a>
+    </div>
+  </div>
+</body>
+</html>

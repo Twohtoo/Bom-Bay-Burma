@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bom Bay Burma - Weight Selection</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f6f8fc, #dbe9ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 22px;
+      color: #002855;
+      margin-bottom: 20px;
+    }
+    label.weight-option {
+      display: block;
+      background-color: #f0f0f0;
+      border: 2px solid #002855;
+      border-radius: 10px;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 16px;
+      text-align: left;
+      cursor: pointer;
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    .custom-weight {
+      margin-top: 15px;
+      text-align: left;
+    }
+    .custom-weight input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+    .nav-buttons a {
+      text-decoration: none;
+    }
+    .back, .continue {
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+    }
+    .back {
+      background-color: #ccc;
+    }
+    .continue {
+      background-color: #002855;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Select Parcel Weight</h1>
+    <form>
+      <label class="weight-option"><input type="radio" name="weight" value="1kg">1 kg - $15</label>
+      <label class="weight-option"><input type="radio" name="weight" value="4kg">4 kg - $40</label>
+      <label class="weight-option"><input type="radio" name="weight" value="10kg">10 kg - $95</label>
+      <label class="weight-option"><input type="radio" name="weight" value="30kg">30 kg - $270</label>
+      <label class="weight-option"><input type="radio" name="weight" value="unknown">Don’t know? Let us weigh for you</label>
+      <div class="custom-weight">
+        <label>Enter custom weight (kg):</label>
+        <input type="number" placeholder="e.g. 5.5">
+      </div>
+    </form>
+    <div class="nav-buttons">
+      <a href="category.html"><button class="back" type="button">Back</button></a>
+      <a href="temperature.html"><button class="continue" type="button">Continue</button></a>
+    </div>
+  </div>
+</body>
+</html>

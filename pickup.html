@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bom Bay Burma - Pickup Address</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f6f8fc, #dbe9ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 22px;
+      color: #002855;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #002855;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+    .nav-buttons a {
+      text-decoration: none;
+    }
+    .back, .continue {
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+    }
+    .back {
+      background-color: #ccc;
+    }
+    .continue {
+      background-color: #002855;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pickup Address</h1>
+    <form>
+      <div class="form-group">
+        <label for="sender-name">Name of Sender</label>
+        <input type="text" id="sender-name" placeholder="Enter sender's name">
+      </div>
+      <div class="form-group">
+        <label for="contact-number">Contact Number</label>
+        <input type="text" id="contact-number" placeholder="Enter contact number">
+      </div>
+      <div class="form-group">
+        <label for="pickup-address">Pickup Address</label>
+        <input type="text" id="pickup-address" placeholder="Enter full pickup address">
+      </div>
+    </form>
+    <div class="nav-buttons">
+      <a href="packaging.html"><button class="back" type="button">Back</button></a>
+      <a href="delivery.html"><button class="continue" type="button">Continue</button></a>
+    </div>
+  </div>
+</body>
+</html>

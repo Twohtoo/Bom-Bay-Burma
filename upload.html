@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bom Bay Burma - Upload Items</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f6f8fc, #dbe9ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      color: #002855;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+    .upload-box {
+      border: 2px dashed #99b7ff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      margin-bottom: 20px;
+      color: #002855;
+    }
+    .upload-box input[type="file"] {
+      display: none;
+    }
+    .upload-box label {
+      display: inline-block;
+      font-size: 16px;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: white;
+      border: 2px solid #002855;
+      border-radius: 8px;
+      color: #002855;
+      cursor: pointer;
+    }
+    .skip-touch {
+      font-size: 14px;
+      color: #002855;
+      margin-bottom: 25px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .continue-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #002855;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function skipUpload() {
+      window.location.href = 'payment.html';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Upload Your Items</h1>
+    <p>Please upload photos or documents for the items you wish to send.</p>
+    <div class="upload-box">
+      <div>Drag and drop files here</div>
+      <label for="upload">Choose Files</label>
+      <input type="file" id="upload" multiple />
+    </div>
+    <div class="skip-touch" onclick="skipUpload()">Just Checking Pricing?<br>I Don't Have the Items Yet</div>
+    <a href="payment.html"><button class="continue-btn">Continue</button></a>
+  </div>
+</body>
+</html>
