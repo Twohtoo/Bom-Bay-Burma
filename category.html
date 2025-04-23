@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bom Bay Burma - Select Category</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f6f8fc, #dbe9ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #002855;
+    }
+    label.option {
+      display: block;
+      background-color: #f0f0f0;
+      border: 2px solid #002855;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: left;
+    }
+    label.option:hover {
+      background-color: #dbeaff;
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    .others-box {
+      margin-top: 10px;
+      display: none;
+      text-align: left;
+    }
+    .others-box label {
+      font-size: 14px;
+      color: #002855;
+    }
+    .others-box input {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .nav-buttons a {
+      text-decoration: none;
+    }
+    .back, .continue {
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+    }
+    .back {
+      background-color: #ccc;
+    }
+    .continue {
+      background-color: #002855;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Select item category</h1>
+    <form id="categoryForm">
+      <label class="option"><input type="radio" name="category" value="Food" onclick="showOtherBox(false)">Food</label>
+      <label class="option"><input type="radio" name="category" value="Electronics" onclick="showOtherBox(false)">Electronics</label>
+      <label class="option"><input type="radio" name="category" value="Documents" onclick="showOtherBox(false)">Documents (+$2)</label>
+      <label class="option"><input type="radio" name="category" value="Medicines" onclick="showOtherBox(false)">Medicines (+$3)</label>
+      <label class="option">
+        <input type="radio" name="category" id="other" value="Others" onclick="showOtherBox(true)">Others
+        <div id="otherBox" class="others-box">
+          <label>Please specify what kind of items:</label>
+          <input type="text" placeholder="e.g., toys, cosmetics..." />
+        </div>
+      </label>
+    </form>
+    <div class="nav-buttons">
+      <a href="index.html"><button class="back" type="button">Back</button></a>
+      <a href="weight.html"><button class="continue" type="button">Continue</button></a>
+    </div>
+  </div>
+
+  <script>
+    function showOtherBox(show) {
+      const otherBox = document.getElementById('otherBox');
+      otherBox.style.display = show ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
